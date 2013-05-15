@@ -1,3 +1,7 @@
+/**
+* Grid theme heavily based on work by Torstein Hønsi
+*/
+
 (function ( $ ) {
   $.fn.finch = function( options ) {
 
