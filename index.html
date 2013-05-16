@@ -30,7 +30,7 @@
   <div class="row-fluid">
     <div class="span12">
       <p>
-        <div id="container" style="min-width: 400px; height: 400px; margin: 0 auto"></div>
+        <div class="finch" data-source="data.csv" style="min-width: 400px; height: 400px; margin: 20px auto"></div>
       </p>
     </div>
   </div>
@@ -39,9 +39,7 @@
 <script>
   (function ($) {
     $(function () {
-      $('#container').finch({
-        'data': 'data.csv',
-      });
+      $('.finch').finch();
     });
   })(jQuery);
 </script>
