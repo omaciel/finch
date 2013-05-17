@@ -25,34 +25,37 @@
 </head>
 
 <body>
-<div class="container-fluid">
-  <div class="row-fluid">
-      <table>
-        <tr>
-      <td>
-        <div class="finch" data-source="k_cli_data.csv" style="min-width: 400px; height: 400px; margin: 20px auto"></div>
-      </td>
-      <td>
-        <div class="finch" data-source="k_gui_data.csv" style="min-width: 400px; height: 400px; margin: 20px auto"></div>
-      </td>
-      </tr>
-        <tr>
-      <td>
-        <div class="finch" data-source="h_cli_data.csv" style="min-width: 400px; height: 400px; margin: 20px auto"></div>
-      </td>
-      <td>
-        <div class="finch" data-source="h_gui_data.csv" style="min-width: 400px; height: 400px; margin: 20px auto"></div>
-      </td>
-      </tr>
-  </div>
-</div>
+    <div class="container-fluid">
+        <div class="row-fluid">
+            <div class="span12">
+                <table>
+                    <tr>
+                        <td>
+                            <div class="finch" data-source="k_cli_data.csv" style="max-width: 600px; height: 300px; margin: 20px auto"></div>
+                        </td>
+                        <td>
+                            <div class="finch" data-source="k_gui_data.csv" style="max-width: 600px; height: 300px; margin: 20px auto"></div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div class="finch" data-source="h_cli_data.csv" style="max-width: 600px; height: 300px; margin: 20px auto"></div>
+                        </td>
+                        <td>
+                            <div class="finch" data-source="h_gui_data.csv" style="max-width: 600px; height: 300px; margin: 20px auto"></div>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
 
-<script>
-  (function ($) {
-    $(function () {
-      $('.finch').finch();
-    });
-  })(jQuery);
-</script>
+    <script>
+        (function ($) {
+            $(function () {
+                $('.finch').finch();
+            });
+        })(jQuery);
+    </script>
 </body>
 </html>
